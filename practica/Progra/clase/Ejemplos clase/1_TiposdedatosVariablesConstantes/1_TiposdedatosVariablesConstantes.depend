@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1728118016 source:t:\uemc\docencia\cursos\_2024_2025\asignaturas\1_2713_2425-m1_fundamentos_de_programacion_i\practica\codeblocks\1_tiposdedatosvariablesconstantes\main.c
+	<stdio.h>
+	<stdlib.h>
+

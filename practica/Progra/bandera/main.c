@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Secuencias ANSI para los colores
+
 #define VERDE   "\x1b[42m"
 #define AMARILLO "\x1b[43m"
 #define ROJO    "\x1b[41m"
@@ -12,7 +12,7 @@ int main() {
     for (i = 0; i < 8; i++) {
         for (j = 0; j < 24; j++) {
             if (j < 10)
-                printf(VERDE "  " RESET);
+                printf("s");
             else
                 printf(AMARILLO "  " RESET);
         }
