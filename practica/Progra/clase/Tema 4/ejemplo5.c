@@ -75,13 +75,11 @@ void exec_sumaN(int argc, char *argv[])
     int *numeros = NULL;
 
     numeros = (int*)malloc((argc-2)*sizeof(int));
-    printf (numeros);
     if( numeros ) {
         for(i=2;i<argc;i++) {
             numeros[i] = atoi(argv[i]);
-            printf("Numero: %d\n", numeros[i]);
         }
-        printf("Resultado: %d\n", math_sumar(argc-2, *numeros));
+        printf("Resultado: %d\n", math_sumar(argc-2, numeros));
     }
     else {
         printf("Error\n");
