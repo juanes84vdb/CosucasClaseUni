@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1731481780 source:c:\users\mvillegas34091\documents\cosucasclaseuni\practica\progra\clase\prueba\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+
