@@ -2,40 +2,32 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
+#include <matriz.h>
 
-#define N 10
+#define N 3
+#define M 3
 
-int main(int argc, char *argv[])
+int main()
 {
-    char matriz[N][N];
-    char texto[N + 1];
+    int **matriz = NULL;
 
-    printf("Ingrese el texto: ");
-    gets(texto);
+    matriz = matriz_create(N, N);
 
-    for (int i = 0; i <= N; i++)
+    for (int i = 0; i < N; i++)
     {
-        matriz[i][i] = texto[i];
-        for (int j = i + 1; j <= N; j++)
+        for (int j = 0; j < M; j++)
         {
-            matriz[i][j] = matriz[i][j - 1] + 1;
-            if (matriz[i][j] == 123)
-                matriz[i][j] = 97;
-            for (int j = i - 1; j >= 0; j--)
-            {
-                matriz[i][j] = matriz[i][j + 1] - 1;
-                if (matriz[i][j] == 96)
-                    matriz[i][j] = 122;
-            }
+            matriz[i][j] = 1;
         }
     }
-        for (int i = 0; i < N; i++)
+    matriz_mult(N, M, matriz, 5);
+    for (int i = 0; i < N; i++)
+    {
+        for (int j = 0; j < M; j++)
         {
-            for (int j = 0; j < N; j++)
-            {
-                printf("%c ", matriz[i][j]);
-            }
-            printf("\n");
+            printf("%d ", matriz[i][j]);
         }
-        return 0;
+        printf("\n");
     }
+    return 0;
+}
