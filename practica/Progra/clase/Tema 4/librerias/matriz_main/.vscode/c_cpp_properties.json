@@ -3,7 +3,8 @@
         {
             "name": "windows-gcc-x86",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "C:/Users/mvillegas34091/Documents/CosucasClaseUni/practica/Progra/clase/librerias/matriz_lib"
             ],
             "compilerPath": "C:/MinGW/bin/gcc.exe",
             "cStandard": "${default}",
