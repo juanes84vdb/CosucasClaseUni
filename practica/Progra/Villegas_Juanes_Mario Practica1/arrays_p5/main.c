@@ -4,7 +4,7 @@
 
 int main()
 {
-    int* array = NULL;
+
     int n, num, max, may = 0, men = 0;
 
     printf("Introduce n: ");
@@ -14,7 +14,7 @@ int main()
         return 1;
     }
 
-    array = (int*)malloc(n * sizeof(int));
+    int* array[n];
     if (array == NULL) {
         printf("Error al asignar memoria\n");
         return 1;
@@ -48,14 +48,14 @@ int main()
     int* arraymay = (int*)malloc(may * sizeof(int));
     if (arraymay == NULL) {
         printf("Error \n");
-        free(array);
+
         return 1;
     }
 
     int* arraymen = (int*)malloc(men * sizeof(int));
     if (arraymen == NULL) {
         printf("Error\n");
-        free(array);
+
         free(arraymay);
         return 1;
     }
@@ -82,7 +82,6 @@ int main()
     }
     printf("\n");
 
-    free(array);
     free(arraymay);
     free(arraymen);
 
