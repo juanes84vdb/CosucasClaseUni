@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/mvillegas34091/Documents/CosucasClaseUni/practica/Progra/clase/Prueba",
-      "program": "c:/Users/mvillegas34091/Documents/CosucasClaseUni/practica/Progra/clase/Prueba/build/Debug/outDebug",
+      "cwd": "c:/Users/mvillegas34091/Documents/CosucasClaseUni/practica/Progra/clase/Prueba/obj/Debug",
+      "program": "c:/Users/mvillegas34091/Documents/CosucasClaseUni/practica/Progra/clase/Prueba/obj/Debug/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
