@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1732203731 source:c:\cosucasclaseuni\practica\progra\villegas_juanes_mario practica1\matriz_12\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+
