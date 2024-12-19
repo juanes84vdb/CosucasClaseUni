@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1734633014 source:c:\cosucasclaseuni\practica\progra\practica2_villegas_juanes_mario\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
